@@ -1,0 +1,11 @@
+const express=require("express");
+const c=require("../controllers/analyticsController");
+const router=express.Router();
+router.get("/dashboard",c.dashboard);
+router.get("/monthly-sales",c.monthlySales);
+router.get("/category-sales",c.categorySales);
+router.get("/region-sales",c.regionSales);
+router.get("/top-products",c.topProducts);
+router.get("/payment-methods",c.paymentMethods);
+router.get("/customers",c.customers);
+module.exports=router;
